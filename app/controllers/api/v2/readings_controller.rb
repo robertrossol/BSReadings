@@ -1,4 +1,4 @@
-class ReadingsController < ApplicationController
+class Api::V2::ReadingsController < ApplicationController
   def index
     @readings = Entry.all
     render "index.json.jbuilder"
